@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+
+{% block title %}Редактировать статью{% endblock %}
+
+{% block menu_extra %}
+    <a href="/articles">Назад</a>
+    <a href="/articles/create">Новая</a>
+{% endblock %}
+
+{% block content %}
+    <h2>Редактировать статью:</h2>
+    
+    <form method="POST" class="form">
+        <div>
+            <label for="title">Заголовок:</label>
+            <input type="text" id="title" name="title" value="{{ article[1] }}" required>
+        </div>
+        
+        <div>
+            <label for="content">Текст статьи:</label>
+            <textarea id="content" name="content" required>{{ article[2] }}</textarea>
+        </div>
+        
+        <div>
+            <button type="submit" class="button">Сохранить изменения</button>
+            <a href="/articles" class="button cancel">Отмена</a>
+        </div>
+    </form>
+    
+    <div class="article-info">
+        <strong>Информация о статье:</strong><br>
+        ID: {{ article[0] }}<br>
+        Дата создания: {{ article[3] }}
+    </div>
+{% endblock %}

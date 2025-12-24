@@ -1,0 +1,165 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-color: #333;
+    color: white;
+    padding: 15px 0;
+    margin-bottom: 20px;
+}
+
+.header h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 24px;
+}
+
+.container {
+    width: 90%;
+    max-width: 800px;
+    margin: 0 auto 30px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.menu {
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #eee;
+    border-radius: 3px;
+}
+
+.menu a {
+    color: #0066cc;
+    text-decoration: none;
+    margin-right: 15px;
+    font-weight: bold;
+}
+
+h1, h2, h3 {
+    color: #333;
+    margin-top: 0;
+}
+
+h2 {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.article {
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 3px;
+}
+
+.article h3 {
+    color: #444;
+    margin-top: 0;
+    font-size: 20px;
+}
+
+.article .date {
+    color: #666;
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+
+.article .content {
+    color: #555;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+.button {
+    display: inline-block;
+    background-color: #4CAF50;
+    color: white;
+    padding: 8px 16px;
+    text-decoration: none;
+    border-radius: 3px;
+    border: none;
+    font-size: 14px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.button.edit {
+    background-color: #008CBA;
+}
+
+.button.cancel {
+    background-color: #777;
+}
+
+.form {
+    margin-top: 20px;
+}
+
+.form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+}
+
+.form input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 14px;
+}
+
+.form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 14px;
+    min-height: 200px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.article-info {
+    background-color: #f8f8f8;
+    padding: 12px;
+    border-radius: 3px;
+    margin-top: 20px;
+    font-size: 13px;
+    color: #666;
+}
+
+.footer {
+    text-align: center;
+    margin-top: 30px;
+    padding: 15px;
+    color: #777;
+    font-size: 12px;
+    border-top: 1px solid #ddd;
+}
+
+.no-articles {
+    text-align: center;
+    padding: 30px;
+    color: #777;
+    font-style: italic;
+}
+
+a:not(.button) {
+    color: #0066cc;
+    text-decoration: none;
+}

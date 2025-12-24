@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+{% block title %}Создать статью{% endblock %}
+
+{% block menu_extra %}
+    <a href="/articles">← Назад</a>
+{% endblock %}
+
+{% block content %}
+    <h2>Создать новую статью:</h2>
+    
+    <form method="POST" class="form">
+        <div>
+            <label for="title">Заголовок:</label>
+            <input type="text" id="title" name="title" placeholder="Введите заголовок статьи..." required>
+        </div>
+        
+        <div>
+            <label for="content">Текст статьи:</label>
+            <textarea id="content" name="content" placeholder="Напишите текст статьи здесь..." required></textarea>
+        </div>
+        
+        <div>
+            <button type="submit" class="button">Сохранить статью</button>
+            <a href="/articles" class="button cancel">Отмена</a>
+        </div>
+    </form>
+{% endblock %}
